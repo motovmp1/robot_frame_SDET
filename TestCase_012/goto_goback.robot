@@ -7,6 +7,7 @@ Library          Selenium2Library
 
 *** Variables ***
 
+${url2}          https://www.bing.com
 ${url}           https://www.google.com
 ${browser}       firefox
 ${magic}         Lenovo New report LOG test
@@ -21,6 +22,18 @@ LoginTest
     Go To                          ${url}
     Sleep                          2
 
+    ${locat}                       Get Location
+    Log To Console                 ${locat}
+    Log                            ${locat}
+
+    Sleep                          2
+    Go To                          ${url2}
+    ${locat2}                      Get Location
+    Log To Console                 ${locat2}
+    Log                            ${locat2}
+
+    Sleep                          2
+    Go Back
     ${locat}                       Get Location
     Log To Console                 ${locat}
     Log                            ${locat}
