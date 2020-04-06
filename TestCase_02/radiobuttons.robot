@@ -18,7 +18,7 @@ LoginTest
 
     openbrowserpathapplication
     Go To                         ${url}
-    sleep                         5s
+    sleep                         3s
     userandpasswordapplication
 
 *** Keywords ***
