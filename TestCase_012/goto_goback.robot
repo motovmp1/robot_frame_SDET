@@ -7,8 +7,7 @@ Library          Selenium2Library
 
 *** Variables ***
 
-${url2}          https://www.bing.com
-${url}           http://demo.automationtesting.in/Windows.html
+${url}           https://www.google.com
 ${browser}       firefox
 ${magic}         Lenovo New report LOG test
 
@@ -22,27 +21,15 @@ LoginTest
     Go To                          ${url}
     Sleep                          2
 
+    ${locat}                       Get Location
+    Log To Console                 ${locat}
+    Log                            ${locat}
 
-    openbrowserpath_application
-    Go To                          ${url2}
-    Sleep                          2
-
-    Switch Browser                 1
-    ${title}                       Get Title
-    Log To Console                 ${title}
-
-    Switch Browser                 2
-    ${title2}                      Get Title
-    Log To Console                 ${title2}
 
     closebrowser_application
 
 
 *** Keywords ***
-
-
-
-
 
 
 openbrowserpath_application
