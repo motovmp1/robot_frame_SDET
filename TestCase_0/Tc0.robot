@@ -19,7 +19,7 @@ LoginTestCase
     # only works with Firefox
     openbrowserpathapplication
     Go To                         ${url}
-    sleep                         5s
+    sleep                         3s
     Close Browser
 
 
