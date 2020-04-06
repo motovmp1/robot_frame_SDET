@@ -7,6 +7,7 @@ Library          Selenium2Library
 
 *** Variables ***
 
+${url2}          https://www.bing.com
 ${url}           http://demo.automationtesting.in/Windows.html
 ${browser}       firefox
 ${magic}         Lenovo New report LOG test
@@ -20,13 +21,29 @@ LoginTest
     openbrowserpath_application
     Go To                          ${url}
     Sleep                          2
-    userandpasswordapplication
+
+
+    openbrowserpath_application
+    Go To                          ${url2}
+    Sleep                          2
+
+    Switch Browser                 1
+    ${title}                       Get Title
+    Log To Console                 ${title}
+
+    Switch Browser                 2
+    ${title2}                      Get Title
+    Log To Console                 ${title2}
+
     closebrowser_application
 
 
-
-
 *** Keywords ***
+
+
+
+
+
 
 openbrowserpath_application
     ${ff default caps}             Evaluate                                                                              sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys, selenium.webdriver
