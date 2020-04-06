@@ -80,3 +80,5 @@ JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod
 JavaScript error: https://imasdk.googleapis.com/formats/outstream/versioned/prod/outstream_web_client_20200401_RC00/outstream.min.js, line 491: Error: lima_error_fetching_ad: Request timed out
 1586150002997	Marionette	INFO	Stopped listening on port 45887
 1586150007029	Marionette	INFO	Stopped listening on port 39961
+1586157563967	Marionette	INFO	Stopped listening on port 33673
+1586157566156	Marionette	INFO	Stopped listening on port 43397
