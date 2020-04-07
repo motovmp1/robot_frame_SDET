@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200406 15:40:33.746" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200407 20:17:23.766" rpa="false">
 <suite id="s1" name="Double Click" source="/home/elsys/Documents/vscode_robot_git/robot_frame_SDET/TestCase_015/double_click.robot">
 <test id="s1-t1" name="LoginTest">
 <kw name="openbrowserpath_application">
@@ -12,8 +12,8 @@
 <assign>
 <var>${ff default caps}</var>
 </assign>
-<msg timestamp="20200406 15:40:33.859" level="INFO">${ff default caps} = {'browserName': 'firefox', 'marionette': True, 'acceptInsecureCerts': True}</msg>
-<status status="PASS" starttime="20200406 15:40:33.858" endtime="20200406 15:40:33.859"></status>
+<msg timestamp="20200407 20:17:23.926" level="INFO">${ff default caps} = {'browserName': 'firefox', 'marionette': True, 'acceptInsecureCerts': True}</msg>
+<status status="PASS" starttime="20200407 20:17:23.926" endtime="20200407 20:17:23.926"></status>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -21,7 +21,7 @@
 <arg>${ff default caps}</arg>
 <arg>marionette =${True}</arg>
 </arguments>
-<status status="PASS" starttime="20200406 15:40:33.859" endtime="20200406 15:40:33.859"></status>
+<status status="PASS" starttime="20200407 20:17:23.926" endtime="20200407 20:17:23.926"></status>
 </kw>
 <kw name="Create Webdriver" library="Selenium2Library">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -29,61 +29,61 @@
 <arg>Firefox</arg>
 <arg>executable_path=/home/elsys/PycharmProjects/robot_frame/TestCases/geckodriver</arg>
 </arguments>
-<msg timestamp="20200406 15:40:33.859" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
-<status status="PASS" starttime="20200406 15:40:33.859" endtime="20200406 15:40:35.701"></status>
+<msg timestamp="20200407 20:17:23.927" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20200407 20:17:23.926" endtime="20200407 20:17:27.107"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200406 15:40:35.701" endtime="20200406 15:40:35.975"></status>
+<status status="PASS" starttime="20200407 20:17:27.107" endtime="20200407 20:17:27.391"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3seconds</arg>
 </arguments>
-<msg timestamp="20200406 15:40:38.976" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200406 15:40:35.975" endtime="20200406 15:40:38.977"></status>
+<msg timestamp="20200407 20:17:30.392" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 20:17:27.391" endtime="20200407 20:17:30.392"></status>
 </kw>
-<status status="PASS" starttime="20200406 15:40:33.858" endtime="20200406 15:40:38.977"></status>
+<status status="PASS" starttime="20200407 20:17:23.925" endtime="20200407 20:17:30.393"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<msg timestamp="20200406 15:40:38.979" level="INFO">Opening url 'http://testautomationpractice.blogspot.com/'</msg>
-<status status="PASS" starttime="20200406 15:40:38.978" endtime="20200406 15:40:49.633"></status>
+<msg timestamp="20200407 20:17:30.395" level="INFO">Opening url 'http://testautomationpractice.blogspot.com/'</msg>
+<status status="PASS" starttime="20200407 20:17:30.394" endtime="20200407 20:17:37.377"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200406 15:40:51.634" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200406 15:40:49.633" endtime="20200406 15:40:51.634"></status>
+<msg timestamp="20200407 20:17:39.378" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200407 20:17:37.377" endtime="20200407 20:17:39.378"></status>
 </kw>
 <kw name="Get Location" library="Selenium2Library">
 <doc>Returns the current browser URL.</doc>
 <assign>
 <var>${locat}</var>
 </assign>
-<msg timestamp="20200406 15:40:51.636" level="INFO">${locat} = http://testautomationpractice.blogspot.com/</msg>
-<status status="PASS" starttime="20200406 15:40:51.634" endtime="20200406 15:40:51.637"></status>
+<msg timestamp="20200407 20:17:39.387" level="INFO">${locat} = http://testautomationpractice.blogspot.com/</msg>
+<status status="PASS" starttime="20200407 20:17:39.379" endtime="20200407 20:17:39.387"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${locat}</arg>
 </arguments>
-<status status="PASS" starttime="20200406 15:40:51.637" endtime="20200406 15:40:51.637"></status>
+<status status="PASS" starttime="20200407 20:17:39.387" endtime="20200407 20:17:39.388"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${locat}</arg>
 </arguments>
-<msg timestamp="20200406 15:40:51.637" level="INFO">http://testautomationpractice.blogspot.com/</msg>
-<status status="PASS" starttime="20200406 15:40:51.637" endtime="20200406 15:40:51.637"></status>
+<msg timestamp="20200407 20:17:39.390" level="INFO">http://testautomationpractice.blogspot.com/</msg>
+<status status="PASS" starttime="20200407 20:17:39.389" endtime="20200407 20:17:39.390"></status>
 </kw>
 <kw name="userandpassword_application">
 <kw name="Double Click Element" library="Selenium2Library">
@@ -91,18 +91,29 @@
 <arguments>
 <arg>xpath://button[contains(text(),'Copy Text')]</arg>
 </arguments>
-<msg timestamp="20200406 15:40:51.638" level="INFO">Double clicking element 'xpath://button[contains(text(),'Copy Text')]'.</msg>
-<status status="PASS" starttime="20200406 15:40:51.638" endtime="20200406 15:40:51.962"></status>
+<msg timestamp="20200407 20:17:39.392" level="INFO">Double clicking element 'xpath://button[contains(text(),'Copy Text')]'.</msg>
+<status status="PASS" starttime="20200407 20:17:39.391" endtime="20200407 20:17:39.716"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200406 15:40:56.963" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200406 15:40:51.962" endtime="20200406 15:40:56.963"></status>
+<msg timestamp="20200407 20:17:44.717" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200407 20:17:39.716" endtime="20200407 20:17:44.717"></status>
 </kw>
-<status status="PASS" starttime="20200406 15:40:51.638" endtime="20200406 15:40:56.964"></status>
+<kw name="Get WebElement" library="Selenium2Library">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="field1"]</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20200407 20:17:44.735" level="INFO">${value} = &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="09005dc4-fcac-4c46-8b32-2d058f9081e5", element="877c7a8c-732a-4378-a73e-7431fb9b5aa0")&gt;</msg>
+<status status="PASS" starttime="20200407 20:17:44.718" endtime="20200407 20:17:44.735"></status>
+</kw>
+<status status="PASS" starttime="20200407 20:17:39.390" endtime="20200407 20:17:44.736"></status>
 </kw>
 <kw name="closebrowser_application">
 <kw name="Sleep" library="BuiltIn">
@@ -110,19 +121,19 @@
 <arguments>
 <arg>5seconds</arg>
 </arguments>
-<msg timestamp="20200406 15:41:01.966" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200406 15:40:56.965" endtime="20200406 15:41:01.967"></status>
+<msg timestamp="20200407 20:17:49.738" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200407 20:17:44.737" endtime="20200407 20:17:49.739"></status>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200406 15:41:01.967" endtime="20200406 15:41:05.671"></status>
+<status status="PASS" starttime="20200407 20:17:49.739" endtime="20200407 20:17:54.461"></status>
 </kw>
-<status status="PASS" starttime="20200406 15:40:56.964" endtime="20200406 15:41:05.672"></status>
+<status status="PASS" starttime="20200407 20:17:44.736" endtime="20200407 20:17:54.461"></status>
 </kw>
-<status status="PASS" starttime="20200406 15:40:33.858" endtime="20200406 15:41:05.672" critical="yes"></status>
+<status status="PASS" starttime="20200407 20:17:23.925" endtime="20200407 20:17:54.461" critical="yes"></status>
 </test>
 <doc>Input Boxes performance</doc>
-<status status="PASS" starttime="20200406 15:40:33.746" endtime="20200406 15:41:05.675"></status>
+<status status="PASS" starttime="20200407 20:17:23.767" endtime="20200407 20:17:54.462"></status>
 </suite>
 <statistics>
 <total>

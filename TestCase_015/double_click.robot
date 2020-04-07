@@ -52,6 +52,8 @@ userandpassword_application
 
     Double Click Element           xpath://button[contains(text(),'Copy Text')]
     Sleep                          5
+    ${value}                       Get Webelement                                  xpath://*[@id="field1"]
+
 
 
 
