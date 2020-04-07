@@ -17,8 +17,8 @@ ${magic}         Lenovo New report LOG test
 
 Open Browser
     # This is allow to check the speed of every action on RF Test
-    openbrowserpath_application    ${browser}                         ${url}
-
+    ${page_title_main}             openbrowserpath_application        ${browser}                                                                                   ${url}
+    Log                            ${page_title_main}
 
 Commands inside the browser
     # Here call all commands that you need
@@ -43,6 +43,9 @@ openbrowserpath_application
     Sleep                          2
     ${locat}                       Get Location
     Log                            ${locat}
+    ${title_page}                  Get Title
+    Log                            ${title_page}
+    [Return]                       ${title_page}
 
 
 
