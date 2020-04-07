@@ -7,7 +7,7 @@ Library          Selenium2Library
 
 *** Variables ***
 
-${url}           http://testautomationpractice.blogspot.com/
+${url}           http://www.newtours.demoaut.com/
 ${browser}       firefox
 ${magic}         Lenovo New report LOG test
 
@@ -15,21 +15,22 @@ ${magic}         Lenovo New report LOG test
 *** Test Cases ***
 
 
-LoginTest
+Open Browser
     # This is allow to check the speed of every action on RF Test
     openbrowserpath_application
     Go To                          ${url}
     Sleep                          2
 
     ${locat}                       Get Location
-    Log To Console                 ${locat}
     Log                            ${locat}
 
+
+Commands inside the browser
     # Here call all commands that you need
     userandpassword_application
 
 
-
+Close all navigator
     closebrowser_application
 
 
@@ -37,9 +38,9 @@ LoginTest
 
 
 openbrowserpath_application
-    ${ff default caps}             Evaluate                                        sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys, selenium.webdriver
-    Set To Dictionary              ${ff default caps}                              marionette =${True}
-    Create Webdriver               Firefox                                         executable_path=/home/elsys/PycharmProjects/robot_frame/TestCases/geckodriver
+    ${ff default caps}             Evaluate                           sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys, selenium.webdriver
+    Set To Dictionary              ${ff default caps}                 marionette =${True}
+    Create Webdriver               Firefox                            executable_path=/home/elsys/PycharmProjects/robot_frame/TestCases/geckodriver
     maximize browser window
     Sleep                          3seconds
 
@@ -49,13 +50,8 @@ openbrowserpath_application
 userandpassword_application
 
     # click mouse twice fast to do action in the page
-
-    Double Click Element           xpath://button[contains(text(),'Copy Text')]
-    Sleep                          5
-    ${value}                       Get Webelement                                  xpath://*[@id="field1"]
-
-
-
+    Input Text                     xpath://input[@name='userName']    mercury
+    Input Text                     xpath://input[@name='password']    mercury
 
 
 
