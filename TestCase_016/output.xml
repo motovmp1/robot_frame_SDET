@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200407 21:57:50.162" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200408 00:06:05.880" rpa="false">
 <suite id="s1" name="Resource Files" source="/home/elsys/Documents/vscode_robot_git/robot_frame_SDET/TestCase_016/resource_files.robot">
 <test id="s1-t1" name="Open Browser">
 <kw name="openbrowserpath_application">
@@ -16,8 +16,8 @@
 <assign>
 <var>${ff default caps}</var>
 </assign>
-<msg timestamp="20200407 21:57:50.276" level="INFO">${ff default caps} = {'browserName': 'firefox', 'marionette': True, 'acceptInsecureCerts': True}</msg>
-<status status="PASS" starttime="20200407 21:57:50.276" endtime="20200407 21:57:50.276"></status>
+<msg timestamp="20200408 00:06:05.994" level="INFO">${ff default caps} = {'browserName': 'firefox', 'marionette': True, 'acceptInsecureCerts': True}</msg>
+<status status="PASS" starttime="20200408 00:06:05.994" endtime="20200408 00:06:05.994"></status>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -25,7 +25,7 @@
 <arg>${ff default caps}</arg>
 <arg>marionette =${True}</arg>
 </arguments>
-<status status="PASS" starttime="20200407 21:57:50.276" endtime="20200407 21:57:50.277"></status>
+<status status="PASS" starttime="20200408 00:06:05.994" endtime="20200408 00:06:05.994"></status>
 </kw>
 <kw name="Create Webdriver" library="Selenium2Library">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -33,56 +33,56 @@
 <arg>${app_browser}</arg>
 <arg>executable_path=/home/elsys/PycharmProjects/robot_frame/TestCases/geckodriver</arg>
 </arguments>
-<msg timestamp="20200407 21:57:50.277" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
-<status status="PASS" starttime="20200407 21:57:50.277" endtime="20200407 21:57:52.362"></status>
+<msg timestamp="20200408 00:06:05.994" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20200408 00:06:05.994" endtime="20200408 00:06:07.870"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200407 21:57:52.362" endtime="20200407 21:57:52.650"></status>
+<status status="PASS" starttime="20200408 00:06:07.870" endtime="20200408 00:06:08.161"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3seconds</arg>
 </arguments>
-<msg timestamp="20200407 21:57:55.651" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200407 21:57:52.650" endtime="20200407 21:57:55.652"></status>
+<msg timestamp="20200408 00:06:11.162" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:08.162" endtime="20200408 00:06:11.163"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${app_url}</arg>
 </arguments>
-<msg timestamp="20200407 21:57:55.653" level="INFO">Opening url 'http://www.newtours.demoaut.com/'</msg>
-<status status="PASS" starttime="20200407 21:57:55.653" endtime="20200407 21:57:58.095"></status>
+<msg timestamp="20200408 00:06:11.164" level="INFO">Opening url 'http://www.newtours.demoaut.com/'</msg>
+<status status="PASS" starttime="20200408 00:06:11.163" endtime="20200408 00:06:13.609"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200407 21:58:00.097" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200407 21:57:58.096" endtime="20200407 21:58:00.097"></status>
+<msg timestamp="20200408 00:06:15.611" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:13.610" endtime="20200408 00:06:15.611"></status>
 </kw>
 <kw name="Get Location" library="Selenium2Library">
 <doc>Returns the current browser URL.</doc>
 <assign>
 <var>${locat}</var>
 </assign>
-<msg timestamp="20200407 21:58:00.105" level="INFO">${locat} = http://www.newtours.demoaut.com/</msg>
-<status status="PASS" starttime="20200407 21:58:00.098" endtime="20200407 21:58:00.105"></status>
+<msg timestamp="20200408 00:06:15.620" level="INFO">${locat} = http://www.newtours.demoaut.com/</msg>
+<status status="PASS" starttime="20200408 00:06:15.612" endtime="20200408 00:06:15.620"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${locat}</arg>
 </arguments>
-<msg timestamp="20200407 21:58:00.107" level="INFO">http://www.newtours.demoaut.com/</msg>
-<status status="PASS" starttime="20200407 21:58:00.106" endtime="20200407 21:58:00.107"></status>
+<msg timestamp="20200408 00:06:15.621" level="INFO">http://www.newtours.demoaut.com/</msg>
+<status status="PASS" starttime="20200408 00:06:15.620" endtime="20200408 00:06:15.622"></status>
 </kw>
-<status status="PASS" starttime="20200407 21:57:50.276" endtime="20200407 21:58:00.108"></status>
+<status status="PASS" starttime="20200408 00:06:05.993" endtime="20200408 00:06:15.622"></status>
 </kw>
-<status status="PASS" starttime="20200407 21:57:50.275" endtime="20200407 21:58:00.108" critical="yes"></status>
+<status status="PASS" starttime="20200408 00:06:05.993" endtime="20200408 00:06:15.623" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Commands inside the browser">
 <kw name="userandpassword_application">
@@ -92,8 +92,8 @@
 <arg>xpath://input[@name='userName']</arg>
 <arg>mercury</arg>
 </arguments>
-<msg timestamp="20200407 21:58:00.114" level="INFO">Typing text 'mercury' into text field 'xpath://input[@name='userName']'.</msg>
-<status status="PASS" starttime="20200407 21:58:00.113" endtime="20200407 21:58:00.178"></status>
+<msg timestamp="20200408 00:06:15.629" level="INFO">Typing text 'mercury' into text field 'xpath://input[@name='userName']'.</msg>
+<status status="PASS" starttime="20200408 00:06:15.628" endtime="20200408 00:06:15.703"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -101,12 +101,12 @@
 <arg>xpath://input[@name='password']</arg>
 <arg>mercury</arg>
 </arguments>
-<msg timestamp="20200407 21:58:00.179" level="INFO">Typing text 'mercury' into text field 'xpath://input[@name='password']'.</msg>
-<status status="PASS" starttime="20200407 21:58:00.178" endtime="20200407 21:58:00.196"></status>
+<msg timestamp="20200408 00:06:15.704" level="INFO">Typing text 'mercury' into text field 'xpath://input[@name='password']'.</msg>
+<status status="PASS" starttime="20200408 00:06:15.704" endtime="20200408 00:06:15.720"></status>
 </kw>
-<status status="PASS" starttime="20200407 21:58:00.112" endtime="20200407 21:58:00.196"></status>
+<status status="PASS" starttime="20200408 00:06:15.627" endtime="20200408 00:06:15.721"></status>
 </kw>
-<status status="PASS" starttime="20200407 21:58:00.111" endtime="20200407 21:58:00.197" critical="yes"></status>
+<status status="PASS" starttime="20200408 00:06:15.626" endtime="20200408 00:06:15.721" critical="yes"></status>
 </test>
 <test id="s1-t3" name="Close all navigator">
 <kw name="closebrowser_application">
@@ -115,19 +115,19 @@
 <arguments>
 <arg>5seconds</arg>
 </arguments>
-<msg timestamp="20200407 21:58:05.198" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200407 21:58:00.198" endtime="20200407 21:58:05.199"></status>
+<msg timestamp="20200408 00:06:20.722" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:15.722" endtime="20200408 00:06:20.723"></status>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200407 21:58:05.199" endtime="20200407 21:58:06.918"></status>
+<status status="PASS" starttime="20200408 00:06:20.723" endtime="20200408 00:06:23.331"></status>
 </kw>
-<status status="PASS" starttime="20200407 21:58:00.197" endtime="20200407 21:58:06.918"></status>
+<status status="PASS" starttime="20200408 00:06:15.721" endtime="20200408 00:06:23.331"></status>
 </kw>
-<status status="PASS" starttime="20200407 21:58:00.197" endtime="20200407 21:58:06.918" critical="yes"></status>
+<status status="PASS" starttime="20200408 00:06:15.721" endtime="20200408 00:06:23.332" critical="yes"></status>
 </test>
 <doc>Resources Files and Keywords</doc>
-<status status="PASS" starttime="20200407 21:57:50.163" endtime="20200407 21:58:06.919"></status>
+<status status="PASS" starttime="20200408 00:06:05.880" endtime="20200408 00:06:23.332"></status>
 </suite>
 <statistics>
 <total>

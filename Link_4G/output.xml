@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200407 22:37:53.075" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200408 00:06:24.009" rpa="false">
 <suite id="s1" name="Title Test" source="/home/elsys/Documents/vscode_robot_git/robot_frame_SDET/Link_4G/title_test.robot">
 <test id="s1-t1" name="Open Browser">
 <kw name="openbrowserpath_application">
@@ -19,8 +19,8 @@
 <assign>
 <var>${ff default caps}</var>
 </assign>
-<msg timestamp="20200407 22:37:53.188" level="INFO">${ff default caps} = {'browserName': 'firefox', 'marionette': True, 'acceptInsecureCerts': True}</msg>
-<status status="PASS" starttime="20200407 22:37:53.188" endtime="20200407 22:37:53.188"></status>
+<msg timestamp="20200408 00:06:24.126" level="INFO">${ff default caps} = {'browserName': 'firefox', 'marionette': True, 'acceptInsecureCerts': True}</msg>
+<status status="PASS" starttime="20200408 00:06:24.126" endtime="20200408 00:06:24.126"></status>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -28,7 +28,7 @@
 <arg>${ff default caps}</arg>
 <arg>marionette =${True}</arg>
 </arguments>
-<status status="PASS" starttime="20200407 22:37:53.188" endtime="20200407 22:37:53.188"></status>
+<status status="PASS" starttime="20200408 00:06:24.126" endtime="20200408 00:06:24.127"></status>
 </kw>
 <kw name="Create Webdriver" library="Selenium2Library">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -36,81 +36,81 @@
 <arg>${app_browser}</arg>
 <arg>executable_path=/home/elsys/PycharmProjects/robot_frame/TestCases/geckodriver</arg>
 </arguments>
-<msg timestamp="20200407 22:37:53.189" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
-<status status="PASS" starttime="20200407 22:37:53.189" endtime="20200407 22:37:55.132"></status>
+<msg timestamp="20200408 00:06:24.127" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20200408 00:06:24.127" endtime="20200408 00:06:26.071"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200407 22:37:55.132" endtime="20200407 22:37:55.421"></status>
+<status status="PASS" starttime="20200408 00:06:26.071" endtime="20200408 00:06:26.374"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3seconds</arg>
 </arguments>
-<msg timestamp="20200407 22:37:58.421" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200407 22:37:55.421" endtime="20200407 22:37:58.422"></status>
+<msg timestamp="20200408 00:06:29.376" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:26.375" endtime="20200408 00:06:29.376"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${app_url}</arg>
 </arguments>
-<msg timestamp="20200407 22:37:58.423" level="INFO">Opening url 'http://192.168.10.254/index.html?link'</msg>
-<status status="PASS" starttime="20200407 22:37:58.422" endtime="20200407 22:37:58.756"></status>
+<msg timestamp="20200408 00:06:29.378" level="INFO">Opening url 'http://192.168.10.254/index.html?link'</msg>
+<status status="PASS" starttime="20200408 00:06:29.377" endtime="20200408 00:06:29.725"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.757" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200407 22:37:58.756" endtime="20200407 22:38:00.757"></status>
+<msg timestamp="20200408 00:06:31.725" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:29.725" endtime="20200408 00:06:31.725"></status>
 </kw>
 <kw name="Get Location" library="Selenium2Library">
 <doc>Returns the current browser URL.</doc>
 <assign>
 <var>${locat}</var>
 </assign>
-<msg timestamp="20200407 22:38:00.765" level="INFO">${locat} = http://192.168.10.254/index.html?link</msg>
-<status status="PASS" starttime="20200407 22:38:00.758" endtime="20200407 22:38:00.765"></status>
+<msg timestamp="20200408 00:06:31.728" level="INFO">${locat} = http://192.168.10.254/index.html?link</msg>
+<status status="PASS" starttime="20200408 00:06:31.726" endtime="20200408 00:06:31.728"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${locat}</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.766" level="INFO">http://192.168.10.254/index.html?link</msg>
-<status status="PASS" starttime="20200407 22:38:00.766" endtime="20200407 22:38:00.767"></status>
+<msg timestamp="20200408 00:06:31.728" level="INFO">http://192.168.10.254/index.html?link</msg>
+<status status="PASS" starttime="20200408 00:06:31.728" endtime="20200408 00:06:31.728"></status>
 </kw>
 <kw name="Get Title" library="Selenium2Library">
 <doc>Returns the title of current page.</doc>
 <assign>
 <var>${title_page}</var>
 </assign>
-<msg timestamp="20200407 22:38:00.774" level="INFO">${title_page} = Elsys - AmpliMAX</msg>
-<status status="PASS" starttime="20200407 22:38:00.767" endtime="20200407 22:38:00.774"></status>
+<msg timestamp="20200408 00:06:31.730" level="INFO">${title_page} = Elsys - AmpliMAX</msg>
+<status status="PASS" starttime="20200408 00:06:31.728" endtime="20200408 00:06:31.730"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${title_page}</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.775" level="INFO">Elsys - AmpliMAX</msg>
-<status status="PASS" starttime="20200407 22:38:00.774" endtime="20200407 22:38:00.775"></status>
+<msg timestamp="20200408 00:06:31.730" level="INFO">Elsys - AmpliMAX</msg>
+<status status="PASS" starttime="20200408 00:06:31.730" endtime="20200408 00:06:31.730"></status>
 </kw>
-<msg timestamp="20200407 22:38:00.776" level="INFO">${page_title_main} = Elsys - AmpliMAX</msg>
-<status status="PASS" starttime="20200407 22:37:53.187" endtime="20200407 22:38:00.776"></status>
+<msg timestamp="20200408 00:06:31.730" level="INFO">${page_title_main} = Elsys - AmpliMAX</msg>
+<status status="PASS" starttime="20200408 00:06:24.126" endtime="20200408 00:06:31.730"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${page_title_main}</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.778" level="INFO">Elsys - AmpliMAX</msg>
-<status status="PASS" starttime="20200407 22:38:00.777" endtime="20200407 22:38:00.778"></status>
+<msg timestamp="20200408 00:06:31.731" level="INFO">Elsys - AmpliMAX</msg>
+<status status="PASS" starttime="20200408 00:06:31.731" endtime="20200408 00:06:31.731"></status>
 </kw>
-<status status="PASS" starttime="20200407 22:37:53.187" endtime="20200407 22:38:00.779" critical="yes"></status>
+<status status="PASS" starttime="20200408 00:06:24.125" endtime="20200408 00:06:31.731" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Commands inside the browser">
 <kw name="userandpassword_application">
@@ -119,24 +119,24 @@
 <assign>
 <var>${title_page_one}</var>
 </assign>
-<msg timestamp="20200407 22:38:00.793" level="INFO">${title_page_one} = Elsys - AmpliMAX</msg>
-<status status="PASS" starttime="20200407 22:38:00.785" endtime="20200407 22:38:00.793"></status>
+<msg timestamp="20200408 00:06:31.734" level="INFO">${title_page_one} = Elsys - AmpliMAX</msg>
+<status status="PASS" starttime="20200408 00:06:31.732" endtime="20200408 00:06:31.734"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${title_page_one}</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.794" level="INFO">Elsys - AmpliMAX</msg>
-<status status="PASS" starttime="20200407 22:38:00.794" endtime="20200407 22:38:00.795"></status>
+<msg timestamp="20200408 00:06:31.734" level="INFO">Elsys - AmpliMAX</msg>
+<status status="PASS" starttime="20200408 00:06:31.734" endtime="20200408 00:06:31.734"></status>
 </kw>
 <kw name="Title Should Be" library="Selenium2Library">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>Elsys - AmpliMAX</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.801" level="INFO">Page title is 'Elsys - AmpliMAX'.</msg>
-<status status="PASS" starttime="20200407 22:38:00.795" endtime="20200407 22:38:00.802"></status>
+<msg timestamp="20200408 00:06:31.736" level="INFO">Page title is 'Elsys - AmpliMAX'.</msg>
+<status status="PASS" starttime="20200408 00:06:31.734" endtime="20200408 00:06:31.736"></status>
 </kw>
 <kw name="Select From List By Label" library="Selenium2Library">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
@@ -144,8 +144,17 @@
 <arg>antena3g</arg>
 <arg>Interna</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.803" level="INFO">Selecting options from selection list 'antena3g' by label Interna.</msg>
-<status status="PASS" starttime="20200407 22:38:00.802" endtime="20200407 22:38:00.851"></status>
+<msg timestamp="20200408 00:06:31.736" level="INFO">Selecting options from selection list 'antena3g' by label Interna.</msg>
+<status status="PASS" starttime="20200408 00:06:31.736" endtime="20200408 00:06:31.759"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath://select[@name='antena3g']</arg>
+<arg>Interna</arg>
+</arguments>
+<msg timestamp="20200408 00:06:31.778" level="INFO">Element 'xpath://select[@name='antena3g']' contains text 'Interna'.</msg>
+<status status="PASS" starttime="20200408 00:06:31.760" endtime="20200408 00:06:31.778"></status>
 </kw>
 <kw name="Element Should Contain" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -153,43 +162,188 @@
 <arg>xpath://select[@name='antena3g']</arg>
 <arg>Externa</arg>
 </arguments>
-<msg timestamp="20200407 22:38:00.876" level="INFO">Element 'xpath://select[@name='antena3g']' contains text 'Externa'.</msg>
-<status status="PASS" starttime="20200407 22:38:00.851" endtime="20200407 22:38:00.876"></status>
+<msg timestamp="20200408 00:06:31.790" level="INFO">Element 'xpath://select[@name='antena3g']' contains text 'Externa'.</msg>
+<status status="PASS" starttime="20200408 00:06:31.778" endtime="20200408 00:06:31.790"></status>
 </kw>
-<status status="PASS" starttime="20200407 22:38:00.784" endtime="20200407 22:38:00.876"></status>
+<status status="PASS" starttime="20200408 00:06:31.732" endtime="20200408 00:06:31.790"></status>
 </kw>
-<status status="PASS" starttime="20200407 22:38:00.781" endtime="20200407 22:38:00.876" critical="yes"></status>
+<status status="PASS" starttime="20200408 00:06:31.732" endtime="20200408 00:06:31.790" critical="yes"></status>
 </test>
-<test id="s1-t3" name="Close all navigator">
+<test id="s1-t3" name="Status do sistema - tipo da antena3g">
+<kw name="statusdosistemaeantena_application">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200408 00:06:32.792" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200408 00:06:31.791" endtime="20200408 00:06:32.792"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id:menu_status</arg>
+</arguments>
+<msg timestamp="20200408 00:06:32.792" level="INFO">Clicking element 'id:menu_status'.</msg>
+<status status="PASS" starttime="20200408 00:06:32.792" endtime="20200408 00:06:33.020"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200408 00:06:37.021" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:33.020" endtime="20200408 00:06:37.021"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath://span[@class='tipo_de_antena']</arg>
+<arg>Interna</arg>
+</arguments>
+<msg timestamp="20200408 00:06:37.074" level="INFO">Element 'xpath://span[@class='tipo_de_antena']' contains text 'Interna'.</msg>
+<status status="PASS" starttime="20200408 00:06:37.022" endtime="20200408 00:06:37.074"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath://span[@class='banda']</arg>
+<arg>900 MHz</arg>
+</arguments>
+<msg timestamp="20200408 00:06:37.106" level="INFO">Element 'xpath://span[@class='banda']' contains text '900 MHz'.</msg>
+<status status="PASS" starttime="20200408 00:06:37.075" endtime="20200408 00:06:37.106"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath://span[@class='freq_3G']</arg>
+<arg>932.4 MHz</arg>
+</arguments>
+<msg timestamp="20200408 00:06:37.128" level="INFO">Element 'xpath://span[@class='freq_3G']' contains text '932.4 MHz'.</msg>
+<status status="PASS" starttime="20200408 00:06:37.107" endtime="20200408 00:06:37.128"></status>
+</kw>
+<kw name="Get WebElement" library="Selenium2Library">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>xpath://span[contains(text(),'Nível de Sinal:')]</arg>
+</arguments>
+<assign>
+<var>${nivel_de_sinal}</var>
+</assign>
+<msg timestamp="20200408 00:06:37.136" level="INFO">${nivel_de_sinal} = &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="a7de5da1-b166-4557-b87b-358b6e520b96", element="e7788cbd-6998-43df-9602-464a7b0b963e")&gt;</msg>
+<status status="PASS" starttime="20200408 00:06:37.128" endtime="20200408 00:06:37.136"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${nivel_de_sinal.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200408 00:06:37.136" endtime="20200408 00:06:37.149"></status>
+</kw>
+<kw name="Get WebElement" library="Selenium2Library">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>xpath://span[@class='titulo_azul nivel_sinal_quality']</arg>
+</arguments>
+<assign>
+<var>${nivel_de_sinal2}</var>
+</assign>
+<msg timestamp="20200408 00:06:37.156" level="INFO">${nivel_de_sinal2} = &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="a7de5da1-b166-4557-b87b-358b6e520b96", element="b775d1f8-1ecf-4392-bc26-72cb5e3c91cb")&gt;</msg>
+<status status="PASS" starttime="20200408 00:06:37.149" endtime="20200408 00:06:37.156"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${nivel_de_sinal2.text}</arg>
+</arguments>
+<status status="PASS" starttime="20200408 00:06:37.157" endtime="20200408 00:06:37.173"></status>
+</kw>
+<kw name="Get WebElement" library="Selenium2Library">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>xpath://span[@class='titulo_azul nivel-3g-percent']</arg>
+</arguments>
+<assign>
+<var>${nivel_de_sinal3}</var>
+</assign>
+<msg timestamp="20200408 00:06:37.184" level="INFO">${nivel_de_sinal3} = &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="a7de5da1-b166-4557-b87b-358b6e520b96", element="6c0bcf3a-95c7-45cb-a81e-c85bcd3b061f")&gt;</msg>
+<status status="PASS" starttime="20200408 00:06:37.173" endtime="20200408 00:06:37.184"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${nivel_de_sinal3}</arg>
+</arguments>
+<assign>
+<var>${mytext}</var>
+</assign>
+<msg timestamp="20200408 00:06:37.197" level="INFO">${mytext} = 69%</msg>
+<status status="PASS" starttime="20200408 00:06:37.184" endtime="20200408 00:06:37.197"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${mytext[0:2]}</arg>
+</arguments>
+<status status="PASS" starttime="20200408 00:06:37.198" endtime="20200408 00:06:37.198"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${mytext[0:2]} &gt; ${60}</arg>
+</arguments>
+<status status="PASS" starttime="20200408 00:06:37.199" endtime="20200408 00:06:37.199"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${mytext[0:2]}</arg>
+</arguments>
+<msg timestamp="20200408 00:06:37.200" level="INFO">69</msg>
+<status status="PASS" starttime="20200408 00:06:37.200" endtime="20200408 00:06:37.200"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>assets/img/icon_3g_on.png</arg>
+</arguments>
+<msg timestamp="20200408 00:06:37.211" level="INFO">Current page contains image 'assets/img/icon_3g_on.png'.</msg>
+<status status="PASS" starttime="20200408 00:06:37.201" endtime="20200408 00:06:37.211"></status>
+</kw>
+<status status="PASS" starttime="20200408 00:06:31.791" endtime="20200408 00:06:37.212"></status>
+</kw>
+<status status="PASS" starttime="20200408 00:06:31.791" endtime="20200408 00:06:37.212" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Close all navigator">
 <kw name="closebrowser_application">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5seconds</arg>
 </arguments>
-<msg timestamp="20200407 22:38:05.878" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200407 22:38:00.877" endtime="20200407 22:38:05.878"></status>
+<msg timestamp="20200408 00:06:42.215" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200408 00:06:37.214" endtime="20200408 00:06:42.216"></status>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200407 22:38:05.878" endtime="20200407 22:38:09.603"></status>
+<status status="PASS" starttime="20200408 00:06:42.216" endtime="20200408 00:06:45.934"></status>
 </kw>
-<status status="PASS" starttime="20200407 22:38:00.877" endtime="20200407 22:38:09.603"></status>
+<status status="PASS" starttime="20200408 00:06:37.214" endtime="20200408 00:06:45.934"></status>
 </kw>
-<status status="PASS" starttime="20200407 22:38:00.876" endtime="20200407 22:38:09.603" critical="yes"></status>
+<status status="PASS" starttime="20200408 00:06:37.213" endtime="20200408 00:06:45.935" critical="yes"></status>
 </test>
 <doc>Resources Files and Keywords</doc>
-<status status="PASS" starttime="20200407 22:37:53.075" endtime="20200407 22:38:09.604"></status>
+<status status="PASS" starttime="20200408 00:06:24.010" endtime="20200408 00:06:45.935"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="Title Test">Title Test</stat>
+<stat pass="4" fail="0" id="s1" name="Title Test">Title Test</stat>
 </suite>
 </statistics>
 <errors>
