@@ -82,7 +82,7 @@ statusdosistemaeantena_application
     ${mytext}                             Get Text                                 ${nivel_de_sinal3}
     Log To Console                        ${mytext[0:2]}
     Should Be True                        ${mytext[0:2]} > ${60}
-    Log                                   ${mytext[0:2]}
+    Log                                   True
     Page Should Contain Image             assets/img/icon_3g_on.png
 
 
