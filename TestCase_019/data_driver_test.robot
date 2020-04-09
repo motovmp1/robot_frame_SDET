@@ -4,6 +4,7 @@ Documentation            Resources Files and Keywords
 Library                  Collections
 Library                  Selenium2Library
 Resource                 /home/elsys/Documents/vscode_robot_git/robot_frame_SDET/Resources/login_resources.robot
+
 # only once in the begin
 Suite Setup              Open Browser
 # only once the final test
