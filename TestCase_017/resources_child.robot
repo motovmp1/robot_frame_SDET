@@ -27,6 +27,7 @@ Open Browser
 userandpassword_application
 
     # click mouse twice fast to do action in the page
+
     Input Text            xpath://input[@name='userName']    mercury
     Input Text            xpath://input[@name='password']    mercury
 
