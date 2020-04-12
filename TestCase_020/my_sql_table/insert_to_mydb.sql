@@ -1,0 +1,10 @@
+INSERT INTO mydb.person
+values(101, "vini", "pinho");
+INSERT INTO mydb.person
+values(102, "vini2", "pinho2");
+INSERT INTO mydb.person
+values(103, "vini3", "pinho3");
+INSERT INTO mydb.person
+values(104, "vini4", "pinho4");
+INSERT INTO mydb.person
+values(105, "vini5", "pinho5");

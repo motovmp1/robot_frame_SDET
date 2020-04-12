@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.9 on linux)" generated="20200412 11:53:37.151" rpa="false">
+<suite id="s1" name="Mysql Database" source="/home/elsys/Documents/vscode_robot_git/robot_frame_SDET/TestCase_020/mysql_database.robot">
+<kw name="Connect To Database" library="DatabaseLibrary" type="setup">
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<arguments>
+<arg>pymysql</arg>
+<arg>${DBname}</arg>
+<arg>${DBuser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+</arguments>
+<msg timestamp="20200412 11:53:37.225" level="INFO">Connecting using : pymysql.connect(db=mydb, user=root, passwd=123mudar, host=127.0.0.1, port=3306, charset=None) </msg>
+<status status="PASS" starttime="20200412 11:53:37.204" endtime="20200412 11:53:37.230"></status>
+</kw>
+<test id="s1-t1" name="Inserting Data person Table">
+<kw name="Execute Sql Script" library="DatabaseLibrary">
+<doc>Executes the content of the `sqlScriptFileName` as SQL commands. Useful for setting the database to a known
+state before running your tests, or clearing out your test data after running each a test. Set optional input
+`sansTran` to True to run command without an explicit transaction commit or rollback.</doc>
+<arguments>
+<arg>/home/elsys/Documents/vscode_robot_git/robot_frame_SDET/TestCase_020/my_sql_table/insert_to_mydb.sql</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20200412 11:53:37.231" level="INFO">Executing : Execute SQL Script  |  /home/elsys/Documents/vscode_robot_git/robot_frame_SDET/TestCase_020/my_sql_table/insert_to_mydb.sql </msg>
+<msg timestamp="20200412 11:53:37.264" level="INFO">${output} = None</msg>
+<status status="PASS" starttime="20200412 11:53:37.231" endtime="20200412 11:53:37.264"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${output}</arg>
+</arguments>
+<status status="PASS" starttime="20200412 11:53:37.264" endtime="20200412 11:53:37.265"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${output}</arg>
+<arg>None</arg>
+</arguments>
+<msg timestamp="20200412 11:53:37.265" level="INFO">Argument types are:
+&lt;class 'NoneType'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20200412 11:53:37.265" endtime="20200412 11:53:37.265"></status>
+</kw>
+<status status="PASS" starttime="20200412 11:53:37.230" endtime="20200412 11:53:37.265" critical="yes"></status>
+</test>
+<kw name="Disconnect From Database" library="DatabaseLibrary" type="teardown">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20200412 11:53:37.266" level="INFO">Executing : Disconnect From Database</msg>
+<status status="PASS" starttime="20200412 11:53:37.266" endtime="20200412 11:53:37.266"></status>
+</kw>
+<status status="PASS" starttime="20200412 11:53:37.152" endtime="20200412 11:53:37.266"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Mysql Database">Mysql Database</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
