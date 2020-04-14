@@ -44,3 +44,6 @@ userandpasswordapplication
     click link                    xpath://a[@class='ico-account']
     sleep                         3s
     close browser
+
+
+    ti
